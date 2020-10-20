@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-int main(void)
+void main()
 {
 	int num[100];
 	int n;
@@ -21,10 +21,9 @@ int main(void)
 			}}}
 		for( i=0; i<n; i++)
 		{
-			if(i) printf(" ");
 			printf("%d",num[i]);
+			putchar(' ');
 		}
 		printf("\n");
-	}
-	return 0;
+	}	
 }
