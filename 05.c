@@ -2,8 +2,7 @@
 void main()
 {
 	int i,j;
-	int n=1;
-	printf("  1");
+	int n=0;
 	for(i=2;i<=100;i++){
 		for(j=2;j<=i;j++){
 			while(j==i) {printf("%3d",i);n++;
