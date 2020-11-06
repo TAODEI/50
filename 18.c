@@ -12,14 +12,15 @@ void main(){
 				scanf("%d",&a[j][k]);
 			}
 		}
-		for(int j1=0,k1,sum1,sum2;x<=m;){
+		for(int j1=0,k1=0;x<=m;){
+			int sum1=0,sum2=0;
 			while(k1==0){
 				sum=0;			
 				for(j=j1;j<x;j++){
             		for(k=0;k<y;k++){
 						sum+=a[j][k];
 					}
-					printf(" sum=%d",sum);
+//					printf(" sum=%d",sum);
 				}
 				break;
 			}
@@ -31,10 +32,8 @@ void main(){
 			y++;
 			k1++;
 			sum=sum-sum1+sum2;
-			sum2=0;
-			sum1=0;
 			if(sum>max) max=sum;
-			if(y>n){
+			if(y==n){
 				k1=0;
 				y=y1;
 				j1++;
