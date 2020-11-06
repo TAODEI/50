@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 void main(){
-	char a[1000000],b[1000000];
+	char a[11],b[11];
 	long p1=0,p2=0;
 	int d1,d2,i,a1=0,a2=0;
 	scanf("%s%d%s%d",a,&d1,b,&d2);
@@ -10,7 +10,7 @@ void main(){
 	}
 	if(a1!=0) p1=d1;
 	for(i=0;i<strlen(b);i++){
-        if(d2==b[i]-'0') a2++;
+       	if(d2==b[i]-'0') a2++;
     }
 	if(a2!=0) p2=d2;
    	for(i=0;i<a1-1;i++){
