@@ -4,7 +4,7 @@ void main()
 	int i,m,n,j,k,s[10000];
 	scanf("%d%d",&m,&n);
 	s[0]=2;
-	for(i=3,k=1;i<90000;i=i+2)
+	for(i=3,k=1;k<n;i=i+2)
 		for(j=0;j<=k;j++){
 			while(j==k){
 				s[k]=i;
@@ -13,14 +13,6 @@ void main()
 			if(i%s[j]==0)
 				break;
 		}
-	/*
-		for(k=3;k<=j;k=k+2){
-			while(j==k){
-			s[i]=j;
-			i++;break;
-			}
-			if(j%k==0)break;
-		}*/
 	for(i=m-1;i<n;i++){
 		printf("%d",s[i]);
 		while((i-m+2)%10!=0&&i!=n-1){
